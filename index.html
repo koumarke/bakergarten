@@ -16,14 +16,19 @@
     <meta property="og:url" content="https://bakergarten.com" />
     <meta property="og:type" content="website" />
     <title>小焙園 Bakergarten</title>
-    <script type="module" crossorigin src="/bakergarten/assets/index-Rl8n38HF.js"></script>
-    <link rel="stylesheet" crossorigin href="/bakergarten/assets/index-CtpgzfGh.css">
+    <script type="module" crossorigin src="/bakergarten/assets/index-SoxbL7fr.js"></script>
+    <link rel="stylesheet" crossorigin href="/bakergarten/assets/index-rNN_DZFG.css">
   </head>
   <body
-    class="block w-full"
+    class="block w-full pt-[40px]"
     :class="{ 'overflow-hidden': showAboutModal }"
     x-data="{ showAboutModal: false }"
   >
+    <div
+      class="fixed top-0 left-0 right-0 z-5 bg-[var(--color-primary)] text-white text-center py-2"
+    >
+      暫停販售中
+    </div>
     <header class="flex items-center justify-center px-4 py-4">
       <img
         id="HeaderLogo"
@@ -241,11 +246,11 @@
           class="w-full"
           src="/bakergarten/assets/cookie-a-day-BXnbFZmE.png"
           loading="lazy"
-          alt=""
+          alt="A COOKIE A DAY KEEPS LIFE CUSHY & YAY!"
         />
       </div>
     </main>
-    <footer class="text-white bg-primary py-20 mt-12">
+    <footer class="text-white bg-primary py-16 mt-12">
       <div class="container text-center">
         <div class="mb-4">
           <span
@@ -255,9 +260,26 @@
             關於小焙園
           </span>
         </div>
-        <p>Copyright © 2025 Bakergarten. All rights reserved.</p>
+        <div class="mt-8 mb-4 mx-auto flex items-center justify-center gap-4">
+          <a href="https://www.instagram.com/bakergarten/" target="_blank">
+            <img
+              class="footer-item-p-xs"
+              src="https://res.cloudinary.com/doweftovm/image/upload/v1734162429/social-icon__instagram_damkrn.svg"
+            />
+          </a>
+          <a href="https://www.threads.net/@bakergarten" target="_blank">
+            <img
+              style="height: 24px"
+              class="footer-item-p-xs"
+              src="https://res.cloudinary.com/doweftovm/image/upload/v1734502044/social-media-icon-threads_w1tej1.png"
+            />
+          </a>
+        </div>
       </div>
     </footer>
+    <div class="bg-primary text-white text-center py-2 text-sm">
+      Copyright © 2025 Bakergarten. All rights reserved.
+    </div>
     <div
       class="fixed top-0 left-0 right-0 bottom-0 bg-[rgba(255,255,255,0.95)] z-10 hidden flex-col justify-center items-center w-full h-full p-4 pb-24"
       :class="{ 'hidden': !showAboutModal, 'flex': showAboutModal }"
